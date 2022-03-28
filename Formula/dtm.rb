@@ -9,7 +9,7 @@ class Dtm < Formula
   
     def install
       ENV["GOPATH"] = buildpath
-      bin_path = buildpath/"src/github.com/kevinburke/hostsfile"
+      bin_path = buildpath/"src/github.com/merico-dev/stream"
       bin_path.install Dir["*"]
       cd bin_path do
         system "go", "build", "-trimpath", "-gcflags=\"all=-N\"", "-l", "-ldflags", "-X", "github.com/merico-dev/stream/cmd/devstream/version.Version=0.3.0", "-o", bin/"dtm", "./cmd/devstream/"
