@@ -15,11 +15,6 @@ class Devstream < Formula
         system "make", "build-core"
       end
     end
-  
-    test do
-      system "false"
-    end
-  end
 
     test do
       assert_match "0.3.0", shell_output("#{bin}/dtm version 2>&1", 2)
