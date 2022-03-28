@@ -1,4 +1,4 @@
-class Devstream < Formula
+class Dtm < Formula
     desc "DevStream: the open-source DevOps toolchain manager (DTM)."
     homepage "https://dtm.dev"
     url "https://github.com/merico-dev/stream/archive/refs/tags/v0.3.0.tar.gz"
